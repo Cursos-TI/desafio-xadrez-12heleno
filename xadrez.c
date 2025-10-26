@@ -5,28 +5,39 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+int torre, rainha = 1 , bispo = 1;
+// move a torre 5 casas para direita
+       printf("Digite o valor do movimento da torre: ");
+       scanf("%d\n", &torre);
+       printf("Torre 5 casas a direita\n", torre);
+      
+       for (int i = 0; i < torre; i++) {
+           printf("Direita\n"); // Direção do Movimento Torre
+       }
+//--------------------------------------------------------------------------
+       printf("Rainha 8 casas a esquerda\n");
+      
+       do {
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+           printf("Esquerda\n", rainha);
+           rainha++;
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+       } while (rainha <= 8);
+//--------------------------------------------------------------------------
+       printf("Bispo 5 casas a frente e direita\n");
+          
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+       while (bispo <= 5)
+       {
+           printf("Bispo a frente e direita\n", bispo);
+           bispo++;
+
+
+       }
+
 
     return 0;
 }
